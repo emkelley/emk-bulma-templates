@@ -1,0 +1,142 @@
+$brand-primary: #6c88eb;
+$brand-success: #00d4be;
+$lightBG: #edecf3;
+$darkBG: #222941;
+$darkAccent: #2e3756;
+$darkAccentLighter: #49596e;
+@import url('https://fonts.googleapis.com/css?family=Hind|IBM+Plex+Sans');
+.media+.media {
+    border: none;
+}
+
+html,
+body {
+    font-family: 'IBM Plex Sans', serif;
+    font-size: 16px;
+    line-height: 1.5;
+    height: 100%;
+    background: $darkBG;
+}
+
+.navbar {
+    background: $darkAccent;
+    .navbar-item {
+        color: #fff;
+    }
+    a {
+        color: #fff !important;
+    }
+}
+
+.box {
+    border-radius: 3px;
+    background: $darkAccent;
+    a {
+        color: #fff;
+    }
+}
+
+.heading {
+    color: #fff;
+}
+
+.topNav {
+    height: 75px;
+    background-image: linear-gradient( 125deg, $darkBG 10%, $darkAccent 100%);
+    color: #FFF;
+    .navbar-brand {
+        width: 300px;
+        .navbar-item {
+            width: 250px;
+        }
+    }
+    .fa-user-circle {
+        font-size: 1.2rem;
+        margin-right: 10px;
+        color: $brand-primary;
+    }
+}
+
+.bottomNav {
+    .navbar-item {
+        font-size: 14px;
+        font-weight: 400;
+        padding: 0px 30px;
+        color: #fff;
+        &:hover {
+            border-bottom: 2px solid $darkAccent;
+            background-color: white !important;
+            color: $darkBG !important;
+        }
+        &.is-active {
+            border-bottom: 2px solid $darkAccent;
+            background-color: white !important;
+            color: $darkBG !important;
+            font-weight: 600;
+        }
+    }
+}
+
+.columns {
+    width: 100%;
+    height: 100%;
+}
+
+.shadow {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.04), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.heading {
+    padding: 20px 0px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-transform: none;
+}
+
+.main {
+    #order {
+        color: #ffffff;
+        strong {
+            color: #ffffff;
+            font-family: 'Hind', sans-serif;
+            letter-spacing: 1px;
+        }
+        article {
+            padding: 12px;
+            background-color: $brand-primary;
+            border-radius: 3px;
+            &.delivered {
+                background: $brand-success;
+                border-radius: 3px;
+            }
+        }
+        .media-left {
+            font-size: 2rem;
+        }
+        .media-right {
+            line-height: 48px;
+            padding-top: 13px;
+        }
+        .tag:not(body).is-delivered {
+            background-color: darken($color: $brand-success, $amount: 10);
+            color: rgb(255, 255, 255);
+        }
+        .tag:not(body).is-transit {
+            background-color: darken($color: $brand-primary, $amount: 10);
+            color: #fff;
+        }
+    }
+}
+
+.tile {
+    font-family: 'IBM Plex Sans', sans-serif!important;
+    .is-child {
+        background: rgb(41, 192, 222);
+        background: linear-gradient(90deg, rgba(41, 192, 222, 1) 0%, rgba(56, 188, 240, 0.5060399159663865) 100%, rgba(255, 186, 0, 0) 100%);
+        background-size: cover;
+        .title,
+        .subtitle {
+            color: white;
+        }
+    }
+}

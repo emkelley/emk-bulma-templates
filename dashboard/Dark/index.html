@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard - Bulma 0.7.1 Template</title>
+    <script defer src="https://pro.fontawesome.com/releases/v5.0.10/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.min.css">
+</head>
+
+<body>
+    <nav class="navbar topNav">
+        <div class="container ">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="https://bulma.io">
+                    <img src="images/logo.png" alt="My logo" width="250" height="">
+                </a>
+                <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="field is-grouped">
+                        <p class="control">
+                            <a class="" href="#">
+                                <i class="fas fa-user-circle"></i>
+                            </a>
+                            <span>Megan Smith</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar shadow">
+        <div class="container">
+            <div class="navbar-menu" id="navMenu">
+                <div class="navbar-start bottomNav ">
+                    <a class="navbar-item is-active" href="#">
+                        <i class="far fa-tachometer-alt"></i>&nbsp; Dashboard</a>
+                    <a class="navbar-item" href="#">
+                        <i class="far fa-list"></i>&nbsp; List</a>
+                    <a class="navbar-item" href="#">
+                        <i class="far fa-user-alt"></i>
+                        </i>&nbsp; Profile</a>
+                    <a class="navbar-item" href="#">
+                        <i class="far fa-shopping-cart"></i>
+                        </i>&nbsp; Payment</a>
+                    <a class="navbar-item" href="#">
+                        <i class="far fa-star"></i>&nbsp; Upgrade</a>
+                    <a class="navbar-item" href="#">
+                        <i class="far fa-envelope-open"></i>&nbsp; Notification</a>
+                    <a class="navbar-item" href="#">
+                        <i class="far fa-cog"></i>&nbsp; Settings</a>
+                </div>
+                <div class="navbar-end">
+                    <a class="navbar-item" href="#">
+                        <i class="far fa-sign-out"></i>&nbsp; Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="columns">
+            <div class="column is-12 main">
+                <span class="heading">Recent Orders</span>
+                <section id="order">
+                    <div class="order-body">
+                        <article class="media order shadow delivered">
+                            <figure class="media-left">
+                                <i class="far fa-box-check"></i>
+                            </figure>
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <strong>Package for John Smith Delivered</strong>
+                                        <br>
+                                        <small>Boston - West Palm Beach | Tracking ID:
+                                            <strong>90872373904439</strong>
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="media-right">
+                                <div class="tags has-addons">
+                                    <span class="tag is-light">Status:</span>
+                                    <span class="tag is-delivered">Delivered</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="media order shadow">
+                            <figure class="media-left">
+                                <i class="far fa-box"></i>
+                            </figure>
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <strong>Package for Jane Doe Dispatched</strong>
+                                        <br>
+                                        <small>Los Angeles - Shenzhen | Tracking ID:
+                                            <strong>937347947904439</strong>
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="media-right">
+                                <div class="tags has-addons">
+                                    <span class="tag is-light">Status:</span>
+                                    <span class="tag is-transit">In Transit</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                <span class="heading">Stats</span>
+                <section class="info-tiles">
+                    <div class="tile is-ancestor has-text-centered">
+                        <div class="tile is-parent">
+                            <article class="tile is-child box">
+                                <p class="title counter" data-count="5157">0</p>
+                                <p class="subtitle">Total Deliveries</p>
+                            </article>
+                        </div>
+                        <div class="tile is-parent">
+                            <article class="tile is-child box">
+                                <p class="title counter" data-count="2102">0</p>
+                                <p class="subtitle">Products</p>
+                            </article>
+                        </div>
+                        <div class="tile is-parent">
+                            <article class="tile is-child box">
+                                <p class="title counter" data-count="39">0</p>
+                                <p class="subtitle">Open Orders</p>
+                            </article>
+                        </div>
+                        <div class="tile is-parent">
+                            <article class="tile is-child box">
+                                <p class="title counter" data-count="8365">0</p>
+                                <p class="subtitle">Metrics</p>
+                            </article>
+                        </div>
+                        <div class="tile is-parent">
+                            <article class="tile is-child box">
+                                <p class="title counter" data-count="2172">0</p>
+                                <p class="subtitle">Cups of Coffee</p>
+                            </article>
+                        </div>
+                        <div class="tile is-parent">
+                            <article class="tile is-child box">
+                                <p class="title counter" data-count="14">0</p>
+                                <p class="subtitle">Pizzas</p>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                <div class="columns">
+                </div>
+            </div>
+        </div>
+        <span class="heading">Metrics</span>
+        <div class="columns">
+            <div class="column">
+                <div class="box">
+                    <canvas id="orderChart"></canvas>
+                </div>
+            </div>
+            <div class="column">
+                <div class="box">
+                    <canvas id="ticketChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <script async type="text/javascript" src="js/scripts.js"></script>
+</body>
+
+</html>

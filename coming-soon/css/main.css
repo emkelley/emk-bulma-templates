@@ -1,31 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Roboto+Mono");
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.is-danger {
-  border-color: #ff2c3c !important;
-  color: #ff2c3c !important;
-}
-
-.is-danger:hover {
-  background: transparent !important;
-  border-color: white !important;
-  color: white !important;
-  transition: all .2s ease-in-out;
-}
-
-.is-danger:hover .zero {
-  color: #ff2c3c !important;
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Roboto+Mono:300,400");
+* {
+  box-sizing: border-box;
 }
 
 html {
-  background: linear-gradient(rgba(34, 41, 65, 0.45), rgba(46, 55, 86, 0.45)), url("../img/bgZero.jpg");
+  background: linear-gradient(rgba(34, 41, 65, 0.45), rgba(46, 55, 86, 0.45)), url("../img/bg.png");
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -33,34 +12,39 @@ html {
   overflow: hidden;
 }
 
-header {
+.hero-head header {
   height: 75px;
 }
 
-header .navbar-item img {
+.hero-head header .navbar-item img {
   height: 75px;
   max-height: none;
 }
 
-.logo {
-  margin: 20px;
-  animation-name: spin;
-  animation-duration: 250000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-.title {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300 !important;
-  font-size: 3rem !important;
-  letter-spacing: 15px;
+.hero-head header .navbar-item .is-primary {
+  border-color: white !important;
   color: white !important;
 }
 
-.subtitle .countdown {
-  color: #5ba9ff;
+.hero-head header .navbar-item .is-primary:hover {
+  background: transparent !important;
+  border-color: white !important;
+  color: white !important;
+  transition: all .2s ease-in-out;
+}
+
+.hero-body .title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300 !important;
+  font-size: 4rem !important;
+  letter-spacing: 15px;
+  color: #ffffff !important;
+}
+
+.hero-body .subtitle .countdown {
+  color: #ffffff;
   font-family: 'Roboto Mono', sans-serif;
+  font-weight: 300;
   text-transform: uppercase;
   padding-top: 15px;
   letter-spacing: 2px;
@@ -85,33 +69,13 @@ header .navbar-item img {
   font-size: .7rem;
 }
 
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-    opacity: 1\9;
-    /* IE9 only */
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes fadeIn {
-  from {
-    opacity: 0;
-    opacity: 1\9;
-    /* IE9 only */
-  }
-  to {
-    opacity: 1;
-  }
-}
-
+/* -------------------- */
+/* -- Animations CSS -- */
+/* -------------------- */
 @keyframes fadeIn {
   from {
     opacity: 0;
     opacity: 1\9;
-    /* IE9 only */
   }
   to {
     opacity: 1;
@@ -120,42 +84,23 @@ header .navbar-item img {
 
 .fade {
   opacity: 0;
-  -webkit-animation: fadeIn ease-in 1;
-  -moz-animation: fadeIn ease-in 1;
   animation: fadeIn ease-in 1;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-duration: 2s;
-  -moz-animation-duration: 2s;
   animation-duration: 2s;
 }
 
 .fade.fadeOne {
-  -webkit-animation-delay: 1.7s;
-  -moz-animation-delay: 1.7s;
   animation-delay: 1.7s;
 }
 
 .fade.fadeTwo {
-  -webkit-animation-delay: 2.2s;
-  -moz-animation-delay: 2.2s;
   animation-delay: 2.2s;
 }
 
 .fade.fadeThree {
-  -webkit-animation-delay: 2.7s;
-  -moz-animation-delay: 2.7s;
-  animation-delay: 2.7s;
-  color: #ff2c3c;
-}
-
-.fade.fadeFour {
-  -webkit-animation-delay: 4.2s;
-  -moz-animation-delay: 4.2s;
   animation-delay: 4.2s;
 }
 
-.fade.fadeFour span {
-  font-size: .5rem;
+.fade.fadeThree span {
+  font-size: .8rem;
 }

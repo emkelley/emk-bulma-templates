@@ -1,5 +1,5 @@
 
-// ♫ ♫ ITS THE FINAL COUNTDOWN ♫ ♫ //
+// ♫ ♫ IT'S THE FINAL COUNTDOWN ♫ ♫ //
 
 var endingDate = new Date("Nov 14, 2018 13:37:00").getTime();
 var x = setInterval(function() {
@@ -23,4 +23,3 @@ var x = setInterval(function() {
   
 }, 1000);
 
-/* ---- particles.js config ---- */

@@ -1,73 +1,67 @@
-
-.hero {
-    background-image:url('../img/bg.png'); 
-    background-size: cover; 
-    background-position: center;
-    color: white;
-    padding: 20px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-.logo {
-    width: 200px; 
-    border-radius: 100%; 
-    border: 3px solid #fff;
-    margin: 15px;
-}
-.hero-title {
-    padding-bottom: 20px;
-}
-.hero-button {
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-}
-.hero-button:hover {
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    transform: translateY(-1px);
-  }
-div#container {
-    max-width: 75em;
-    margin: 0 auto;
-    color: #000;
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600');
+$accent: #39cde7;
+$accentDarker: darken($color: $accent,
+$amount: 20);
+* {
+    box-sizing: border-box;
 }
 
-body {
-    height: 100%;
-    width: 100%;
-    color: #000;
-    text-align: center;
-}
-
-i {
-    transition: all 0.25s;
+a {
+    color: $accentDarker;
 }
 
 h1 {
-    font-size: 2em;
-    cursor: default;
+    font-size: 2rem;
+}
+.hero {
+    background-image: url('../img/bg.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    .logo {
+        width: 200px;
+        border-radius: 100%;
+        border: 3px solid #fff;
+        margin: 15px;
+    }
+    .hero-title {
+        padding-bottom: 20px;
+    }
 }
 
-.brand {
-    border-radius: 50%;
-    display: inline-block;
-    max-width: 6em;
+
+.intro {
+    font-family: 'IBM Plex Sans', sans-serif;
+    padding: 3rem;
 }
 
-h2 {
-    font-weight: thin;
-    font-size: 3em;
-}
- 
-.ceo {
-    border: 5px solid #5ce5ff;
+.card {
+    border-radius: 5px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+    a {
+        color: #333;
+        &:hover {
+            color: darken($color: $accent, $amount: 20);
+            transition: all .1s ease-in-out;
+        }
+    }
+    .card-image img {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
 }
 
-.medium {
-    max-width: 70em;
-    text-align: center;
-    margin: auto;
-}
-
-.footer {
+.page-foot {
+    min-height: 120px;
     color: #fff;
-    background-color: #6bbcdc;
-    padding: 4em
+    background-color: $accentDarker;
+    margin-top: 4rem;
+    p {
+        padding-top: 25px;
+    }
 }

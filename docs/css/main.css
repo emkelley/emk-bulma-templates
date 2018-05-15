@@ -1,77 +1,70 @@
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600");
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #1490a6;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
 .hero {
   background-image: url("../img/bg.png");
   background-size: cover;
   background-position: center;
   color: white;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 600;
   padding: 20px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-.logo {
+.hero .logo {
   width: 200px;
   border-radius: 100%;
   border: 3px solid #fff;
   margin: 15px;
 }
 
-.hero-title {
+.hero .hero-title {
   padding-bottom: 20px;
 }
 
-.hero-button {
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+.intro {
+  font-family: 'IBM Plex Sans', sans-serif;
+  padding: 3rem;
 }
 
-.hero-button:hover {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  transform: translateY(-1px);
+.card {
+  border-radius: 5px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 600;
 }
 
-div#container {
-  max-width: 75em;
-  margin: 0 auto;
-  color: #000;
+.card a {
+  color: #333;
 }
 
-body {
-  height: 100%;
-  width: 100%;
-  color: #000;
-  text-align: center;
+.card a:hover {
+  color: #1490a6;
+  transition: all .1s ease-in-out;
 }
 
-i {
-  transition: all 0.25s;
+.card .card-image img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
-h1 {
-  font-size: 2em;
-  cursor: default;
-}
-
-.brand {
-  border-radius: 50%;
-  display: inline-block;
-  max-width: 6em;
-}
-
-h2 {
-  font-weight: thin;
-  font-size: 3em;
-}
-
-.ceo {
-  border: 5px solid #5ce5ff;
-}
-
-.medium {
-  max-width: 70em;
-  text-align: center;
-  margin: auto;
-}
-
-.footer {
+.page-foot {
+  min-height: 120px;
   color: #fff;
-  background-color: #6bbcdc;
-  padding: 4em;
+  background-color: #1490a6;
+  margin-top: 4rem;
+}
+
+.page-foot p {
+  padding-top: 25px;
 }

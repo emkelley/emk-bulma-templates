@@ -14,6 +14,7 @@ body {
   background-image: linear-gradient(125deg, #edecf3 10%, #ffffff 100%);
   border-bottom: 1px solid #edecf3;
 }
+
 .topNav .fa-user-circle {
   font-size: 1.2rem;
   margin-right: 10px;
@@ -26,11 +27,13 @@ body {
   padding: 0px 30px;
   color: #505050 !important;
 }
+
 .bottomNav .navbar-item:hover {
   border-bottom: 2px solid #1a649c;
   background-color: white !important;
   color: #1b659e !important;
 }
+
 .bottomNav .navbar-item.is-active {
   border-bottom: 2px solid #1a649c;
   background-color: white !important;
@@ -53,31 +56,39 @@ body {
   font-size: 1.1rem;
   text-transform: none;
 }
+
 .main #order {
   color: #ffffff;
 }
+
 .main #order strong {
   color: #ffffff;
 }
+
 .main #order article {
   padding: 12px;
   background-color: #1a649c;
   border-radius: 5px;
 }
+
 .main #order article.delivered {
   background: #13c268;
   border-radius: 5px;
 }
+
 .main #order .media-left {
   font-size: 2rem;
 }
+
 .main #order .media-right {
   line-height: 48px;
   padding-top: 11px;
 }
+
 .main #order .tag:not(body).is-success {
   background-color: #53a5e2;
 }
+
 .main #order .tag:not(body).is-delivered {
   background-color: #0e944f;
   color: white;
@@ -87,6 +98,7 @@ body {
   background: linear-gradient(155deg, rgba(32, 45, 61, 0.8) 0%, rgba(56, 75, 99, 0.8) 100%), url(http://cdn.backgroundhost.com/backgrounds/subtlepatterns/vaio_hard_edge.png);
   background-size: cover;
 }
+
 .tile .is-child .title, .tile .is-child .subtitle {
   color: white;
 }

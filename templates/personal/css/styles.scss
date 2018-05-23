@@ -1,7 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Dosis|Montserrat:600');
+$primary: rgb(17,
+158,
+205);
 * {
   box-sizing: border-box;
 }
+
+html {
+  font-family: 'Dosis', sans-serif;
+}
+
 .input,
 .textarea {
   padding-top: 6px;
@@ -11,39 +19,56 @@
 .header-wrapper {
   padding-bottom: 30px;
 }
+
 .hero {
   background-image: url(../img/bg.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-
 }
 .hero-foot {
+  height: 50px;
   background: white;
-  .tabs {
-    padding-left: 30rem;
-    padding-right: 30rem;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.082);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.082);
+  .hero-foot--wrapper {
+    width: 500px;
+    margin: 0 auto;
+    .tabs {
+      line-height: 38px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 1rem;
+      ul {
+        .is-active {
+          a {
+            color: $primary !important;
+          }
+        }
+        a {
+          color: #4a4a4a !important;
+          &:hover {
+            color: $primary !important;
+            transition: all .2s ease-in-out;
+          }
+        } 
+      }
+    }
   }
-  a {
-    color: #4a4a4a!important;
-  }
 }
-/* header titles */
-
-.hero.title, .hero.subtitle {
-  color: whitesmoke;
-}
-
-.hero .title { 
-  font-family: 'Kaushan Script', sans-serif;
-  transform: rotate(-5deg);
-  font-size: 5rem;
-}
-/* hero */
 
 .hero {
   background-color: transparent;
+  .title {
+    font-family: 'Kaushan Script', sans-serif;
+    transform: rotate(-5deg);
+    font-size: 5rem;
+    color: whitesmoke;
+  }
+  .subtitle {
+    font-family: 'Dosis', sans-serif;
+  }
 }
 
 /* navigation */

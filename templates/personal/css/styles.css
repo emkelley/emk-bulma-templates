@@ -1,6 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script|Dosis|Montserrat:600");
 * {
   box-sizing: border-box;
+}
+
+html {
+  font-family: 'Dosis', sans-serif;
 }
 
 .input,
@@ -21,33 +25,51 @@
 }
 
 .hero-foot {
+  height: 50px;
   background: white;
-}
-
-.hero-foot .tabs {
-  padding-left: 30rem;
-  padding-right: 30rem;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.082);
 }
 
-.hero-foot a {
+.hero-foot .hero-foot--wrapper {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.hero-foot .hero-foot--wrapper .tabs {
+  line-height: 38px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+
+.hero-foot .hero-foot--wrapper .tabs ul .is-active a {
+  color: #119ecd !important;
+}
+
+.hero-foot .hero-foot--wrapper .tabs ul a {
   color: #4a4a4a !important;
 }
 
-/* header titles */
-.hero.title, .hero.subtitle {
-  color: whitesmoke;
+.hero-foot .hero-foot--wrapper .tabs ul a:hover {
+  color: #119ecd !important;
+  transition: all .2s ease-in-out;
+}
+
+.hero {
+  background-color: transparent;
 }
 
 .hero .title {
   font-family: 'Kaushan Script', sans-serif;
   transform: rotate(-5deg);
   font-size: 5rem;
+  color: whitesmoke;
 }
 
-/* hero */
-.hero {
-  background-color: transparent;
+.hero .subtitle {
+  font-family: 'Dosis', sans-serif;
 }
 
 /* navigation */

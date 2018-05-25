@@ -1,0 +1,143 @@
+@import '_vars';
+
+
+/* debug
+.column {
+  outline: 1px solid red;
+}
+*/
+
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: 'Lato', sans-serif;
+  width: 100%;
+}
+
+.header-wrapper {
+  padding-bottom: 30px;
+}
+.right-image img {
+  border-radius: 11px;
+  margin: 20px;
+  box-shadow: 0 5px 20px rgba(14,25,80,.30);
+
+}
+.hero {
+  background-image: url(../img/bg.jpg);
+  background: linear-gradient(rgba(31,44,108,.65), rgba(31,44,108,.65)),rgba(0,0,0,0.55) url('../img/bg.jpg') no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+.hero-foot {
+  height: 50px;
+  background: white;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.082);
+  .hero-foot--wrapper {
+    width: 500px;
+    margin: 7px auto;
+    height: 50px;
+    .hero-menu-desktop {
+      line-height: 38px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      text-transform: lowercase;
+      letter-spacing: 1px;
+      font-size: 1rem;
+      ul {
+        li {
+          display: inline-block;
+          padding-right: 15px;
+          padding-left: 15px;
+        }
+        .is-active {
+          a {
+            color: $brand-primary !important;
+          }
+        }
+        a {
+          color: #4a4a4a !important;
+          &:hover {
+            color: $brand-primary !important;
+            transition: all .2s ease-in-out;
+          }
+        } 
+      }
+    }
+  }
+}
+.hero {
+  background-color: transparent;
+  box-shadow: inset 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  font-family: 'Poppins', sans-serif;
+  .title {
+    font-family: 'Kaushan Script', sans-serif;
+    transform: rotate(-5deg);
+    font-size: 5rem;
+    color: whitesmoke;
+  }
+  .subtitle {
+    padding: 5px;
+  }
+  .profession {
+    padding-top: 50px;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+  }
+}
+
+
+
+.main-content {
+  padding-top: 2rem;
+  color: $text-primary;
+  font-family: 'Poppins', sans-serif;
+}
+
+  .section-title {
+    font-family: 'Poppins', sans-serif;
+    color: #43485c;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    padding-bottom: 30px;
+  }
+
+.section-dark {
+  background-color: #f9fbfd;
+  padding: 60px 0px 80px 0px;
+  &.experience {
+    h1 {
+      padding: 10px;
+    } 
+  }  
+}
+.clients {
+  padding-top: 65px;
+  height: 200px;
+  img {
+    padding: 10px;
+  }
+}
+.section-light {
+  padding-bottom: 30px;
+}
+
+.footer {
+  padding: 0;
+  height: 80px;
+  line-height: 25px;
+  text-align: center;
+  background: $brand-primary;
+  color: whitesmoke;
+  padding-top: 2rem;
+  a {
+    color: lightgrey;
+    .nav-item {
+      color: whitesmoke;
+    }
+  }
+}

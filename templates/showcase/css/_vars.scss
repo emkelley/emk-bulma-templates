@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Poppins|Kaushan+Script');
+$brand-primary: rgb(31,44,108);
+$text-primary: rgb(60, 65, 114);
+
+
+
+.has-vertically-aligned-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

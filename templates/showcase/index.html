@@ -13,11 +13,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-  <script src="js/scripts.js"></script>
+  <script src="js/app.js"></script>
 </head>
-
+ 
 <body>
-  <div class="header-wrapper">
+  <button onclick="goingUp()" id="toTop" title="Go to top"><i class="fas fa-angle-up"></i></button>
+  <div class="header-wrapper" id="home">
     <section class="hero is-large is-dark">
       <nav class="navbar is-transparent is-hidden-desktop">
         <div class="navbar-brand">
@@ -34,22 +35,27 @@
 
           <div class="navbar-end">
             <div class="navbar-item">
-              <a class="navbar-item" href="https://bulma.io/">
+              <a class="navbar-item" href="#home">
                 Home
               </a>
             </div>
             <div class="navbar-item">
-              <a class="navbar-item" href="https://bulma.io/">
+              <a class="navbar-item" href="#about-me">
                 About Me
               </a>
             </div>
             <div class="navbar-item">
-              <a class="navbar-item" href="https://bulma.io/">
-                Gallery
+              <a class="navbar-item" href="#skills">
+                Skills
               </a>
             </div>
             <div class="navbar-item">
-              <a class="navbar-item" href="https://bulma.io/">
+              <a class="navbar-item" href="#my-work">
+                My Work
+              </a>
+            </div>
+            <div class="navbar-item">
+              <a class="navbar-item" href="#contact">
                 Contact
               </a>
             </div>
@@ -69,16 +75,19 @@
             <div class="column hero-menu-desktop has-text-centered">
               <ul>
                 <li class="is-active">
-                  <a>Home</a>
+                  <a href="#home">Home</a>
                 </li>
                 <li>
-                  <a>About Me</a>
+                  <a href="#about-me">About Me</a>
                 </li>
                 <li>
-                  <a>Gallery</a>
+                  <a href="#skills">Skills</a>
                 </li>
                 <li>
-                  <a>Contact</a>
+                  <a href="#my-work">My Work</a>
+                </li>
+                <li>
+                  <a href="#contact">Contact</a>
                 </li>
               </ul>
             </div>
@@ -90,7 +99,7 @@
 
 
   <div class="main-content">
-    <div class="section-light about-me">
+    <div class="section-light about-me" id="about-me">
       <div class="container">
         <div class="column is-12 about-me">
           <h1 class="title has-text-centered section-title">About Me</h1>
@@ -141,7 +150,7 @@
         </div>
       </div>
     </div>
-    <div class="section-dark experience">
+    <div class="section-dark skills" id="skills">
       <div class="container">
         <div class="columns is-multiline">
           <div class="column is-12 about-me">
@@ -170,7 +179,7 @@
         </div>
       </div>
     </div>
-    <div class="section-light my-work">
+    <div class="section-light my-work" id="my-work">
         <div class="container">
           <div class="columns is-multiline" data-aos="fade-in" data-aos-easing="linear">
               <div class="column is-12 about-me">
@@ -219,7 +228,7 @@
           </div>
         </div>
       </div>
-    <div class="section-dark contact">
+    <div class="section-dark contact" id="contact">
       <div class="container">
         <div class="columns is-multiline"  data-aos="fade-in-up" data-aos-easing="linear">
           <div class="column is-12 about-me">

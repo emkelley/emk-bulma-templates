@@ -7,7 +7,7 @@
 }
 */
 
-
+ 
 * {
   box-sizing: border-box;
 }
@@ -16,17 +16,17 @@ html {
   width: 100%;
   min-height: 100%;
 }
-
+ 
 .header-wrapper {
   padding-bottom: 30px;
 }
 .right-image img {
   border-radius: 11px;
-  margin: 20px;
+  margin: 20px; 
   box-shadow: 0 5px 20px rgba(14,25,80,.30);
   @include for-phone-only {
     margin: auto;
-  }
+  } 
 }
 .hero {
   background-image: url(../img/bg.jpg);
@@ -42,9 +42,9 @@ html {
   @include for-phone-only {
     display: none;
   }
-  .hero-foot--wrapper {
+  .hero-foot--wrapper { 
     width: 500px;
-    margin: 7px auto;
+    margin: 7px auto; 
     height: 50px;
     .hero-menu-desktop {
       line-height: 38px;
@@ -142,7 +142,7 @@ html {
 .section-dark {
   background-color: #f9fbfd;
   padding: 60px 0px 80px 0px;
-  &.experience {
+  &.skills {
     @include for-phone-only {
       padding: 0px 20px 40px 20px;
       padding-bottom: 20px;
@@ -193,4 +193,26 @@ html {
       color: whitesmoke;
     }
   }
+}
+
+#toTop {
+  height: 50px;
+  width: 50px;
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgba(31,44,108,.65); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  border-radius: 50%; /* Rounded corners */
+  font-size: 2rem;
+  box-shadow: 0 5px 20px rgba(14,25,80,.30);
+}
+
+#toTop:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
 }

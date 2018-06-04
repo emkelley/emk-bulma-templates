@@ -9,7 +9,7 @@ $text-primary: rgb(60, 65, 114);
   flex-direction: column;
   justify-content: center;
 }
-
+ 
 @mixin for-phone-only {
   @media (max-width: 599px) { @content; }
 }

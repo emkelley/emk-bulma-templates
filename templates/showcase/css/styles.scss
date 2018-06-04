@@ -24,7 +24,9 @@ html {
   border-radius: 11px;
   margin: 20px;
   box-shadow: 0 5px 20px rgba(14,25,80,.30);
-
+  @include for-phone-only {
+    margin: auto;
+  }
 }
 .hero {
   background-image: url(../img/bg.jpg);
@@ -37,6 +39,9 @@ html {
   height: 50px;
   background: white;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.082);
+  @include for-phone-only {
+    display: none;
+  }
   .hero-foot--wrapper {
     width: 500px;
     margin: 7px auto;
@@ -90,7 +95,11 @@ html {
   }
 }
 
-
+.about-links {
+  @include for-phone-only {
+    text-align: center;
+  }
+}
 
 .main-content {
   padding-top: 2rem;
@@ -112,13 +121,12 @@ html {
 }
 .work-item {
   margin-bottom: 1rem;
-  will-change: auto;
   -webkit-transition: all .1s ease-in-out;
   transition: all .1s ease-in-out;
   border-radius: 5px;
   background-size: cover;
-  background-position: 50%;
   background-repeat: no-repeat;
+  box-shadow: 0 5px 20px rgba(14,25,80,.30);
   &:hover {
     -webkit-transform: scale(1.055) translateY(-2px);
     transform: scale(1.055) translateY(-2px);
@@ -128,32 +136,46 @@ html {
 }
 
 
-.clients {
-  padding-top: 65px;
-  height: 140px;
-  img {
-    padding: 10px;
-  }
-}
+
 
 
 .section-dark {
   background-color: #f9fbfd;
   padding: 60px 0px 80px 0px;
   &.experience {
+    @include for-phone-only {
+      padding: 0px 20px 40px 20px;
+      padding-bottom: 20px;
+    }
     h1 {
       padding: 10px;
     } 
+  }
+  &.contact {
+    @include for-phone-only {
+      padding: 0px 20px 40px 20px;
+    }
   }  
 }
-
+  
 .section-light {
   padding: 30px;
+  .my-work {
+    padding-bottom: 50px;
+  }
+  .clients {
+    padding-top: 65px;
+    height: 140px;
+    @include for-phone-only {
+      display: none!important;
+    }
+    img {
+      padding: 10px;
+    }
+  }
 }
 
-.my-work {
-  padding-bottom: 50px;
-}
+
 
 .footer {
   bottom: 0;

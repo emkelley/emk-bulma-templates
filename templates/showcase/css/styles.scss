@@ -14,6 +14,7 @@
 html {
   font-family: 'Lato', sans-serif;
   width: 100%;
+  min-height: 100%;
 }
 
 .header-wrapper {
@@ -109,31 +110,27 @@ html {
 .is-larger {
   font-size: 1.2rem;
 }
-.item-figure, .wdgt-figure {
+.work-item {
   margin-bottom: 1rem;
-  position: relative;
-  top: 0;
-  z-index: 10;
   will-change: auto;
-  -webkit-transition: all 172ms cubic-bezier(.455,.03,.515,.955);
-  transition: all 172ms cubic-bezier(.455,.03,.515,.955);
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
   border-radius: 5px;
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
-}
-.item-link:hover .item-figure, .item-link:hover, .wdgt-figure {
-  -webkit-transform: scale(1.015) translateY(-2px);
-  transform: scale(1.015) translateY(-2px);
-  z-index: 20;
-  -webkit-box-shadow: 0 2px 25px 0 rgba(30,30,30,.1);
-  box-shadow: 0 2px 25px 0 rgba(30,30,30,.1);
+  &:hover {
+    -webkit-transform: scale(1.055) translateY(-2px);
+    transform: scale(1.055) translateY(-2px);
+    -webkit-box-shadow: 0 2px 25px 0 rgba(30,30,30,.1);
+    box-shadow: 0 2px 25px 0 rgba(30,30,30,.1);
+  }
 }
 
 
 .clients {
   padding-top: 65px;
-  height: 200px;
+  height: 140px;
   img {
     padding: 10px;
   }
@@ -159,6 +156,8 @@ html {
 }
 
 .footer {
+  bottom: 0;
+  width: 100vw;
   padding: 0;
   height: 80px;
   line-height: 25px;

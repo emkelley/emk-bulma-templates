@@ -7,8 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <title>Showcase - A Bulma 0.7.1 Template by ArcTheme</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-    crossorigin="anonymous">
+  <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="css/vendor/bulma.min.css" />
   <link rel="stylesheet" type="text/css" href="css/styles.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -173,47 +172,67 @@
     </div>
     <div class="section-light my-work">
         <div class="container">
-          <div class="columns is-multiline">
+          <div class="columns is-multiline" data-aos="fade-in" data-aos-easing="linear">
               <div class="column is-12 about-me">
                 <h1 class="title has-text-centered section-title">My Work</h1>
               </div>
             <div class="column is-3">
-              <figure class="image is-2by1 item-figure" style="background-image: url('https://picsum.photos/800/400/?random');"
+              <figure class="image is-2by1 work-item" style="background-image: url('https://picsum.photos/320/180/?random');"
                 alt="">
               </figure>
             </div>
             <div class="column is-3">
-              <figure class="image is-2by1 item-figure" style="background-image: url('https://picsum.photos/800/400/?random');"
+              <figure class="image is-2by1 work-item" style="background-image: url('https://picsum.photos/320/180/?random');"
                 alt="">
               </figure>
             </div>
             <div class="column is-3">
-              <figure class="image is-2by1 item-figure" style="background-image: url('https://picsum.photos/800/400/?random');"
+              <figure class="image is-2by1 work-item" style="background-image: url('https://picsum.photos/320/180/?random');"
                 alt="">
               </figure>
             </div>
             <div class="column is-3">
-              <figure class="image is-2by1 item-figure" style="background-image: url('https://picsum.photos/800/400/?random');"
+              <figure class="image is-2by1 work-item" style="background-image: url('https://picsum.photos/320/180/?random');"
                 alt="">
               </figure>
             </div>
             <div class="column is-3">
-              <figure class="image is-2by1 item-figure" style="background-image: url('https://picsum.photos/800/400/?random');"
+              <figure class="image is-2by1 work-item" style="background-image: url('https://picsum.photos/320/180/?random');"
                 alt="">
               </figure>
             </div>
             <div class="column is-3">
-              <figure class="image is-2by1 item-figure" style="background-image: url('https://picsum.photos/800/400/?random');"
+              <figure class="image is-2by1 work-item" style="background-image: url('https://picsum.photos/320/180/?random');"
                 alt="">
               </figure>
             </div>
             <div class="column is-3">
-              <figure class="image is-2by1 item-figure" style="background-image: url('https://picsum.photos/800/400/?random');"
+              <figure class="image is-2by1 work-item" style="background-image: url('https://picsum.photos/320/180/?random');"
                 alt="">
               </figure>
             </div>
             <div class="column is-3">
-              <figure class="image is-2by1 item-figure" style="background-image: url('https://picsum.photos/800/400/?random');"
+              <figure class="image is-2by1 work-item" style="background-image: url('https://picsum.photos/320/180/?random');"
+                alt="">
+              </figure>
+            </div>
+            <div class="column is-3">
+              <figure class="image is-2by1 work-item" style="background-image: url('https://picsum.photos/320/180/?random');"
+                alt="">
+              </figure>
+            </div>
+            <div class="column is-3">
+              <figure class="image is-2by1 work-item" style="background-image: url('https://picsum.photos/320/180/?random');"
+                alt="">
+              </figure>
+            </div>
+            <div class="column is-3">
+              <figure class="image is-2by1 work-item" style="background-image: url('https://picsum.photos/320/180/?random');"
+                alt="">
+              </figure>
+            </div>
+            <div class="column is-3">
+              <figure class="image is-2by1 work-item" style="background-image: url('https://picsum.photos/320/180/?random');"
                 alt="">
               </figure>
             </div>
@@ -222,42 +241,38 @@
       </div>
     <div class="section-dark contact">
       <div class="container">
-        <div class="columns is-multiline">
-
+        <div class="columns is-multiline"  data-aos="fade-in-up" data-aos-easing="linear">
           <div class="column is-12 about-me">
             <h1 class="title has-text-centered section-title">Contact</h1>
           </div>
           <div class="column is-6 is-offset-3">
             <div class="field">
               <label class="label">Name</label>
-              <div class="control">
+              <div class="control has-icons-left">
                 <input class="input" type="text" placeholder="Ex. John Doe">
+                <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                  </span>
               </div>
             </div>
-
             <div class="field">
               <label class="label">Email</label>
-              <div class="control has-icons-left has-icons-right">
+              <div class="control has-icons-left">
                 <input class="input" type="email" placeholder="Ex. hello@arctheme.com">
                 <span class="icon is-small is-left">
                   <i class="fas fa-envelope"></i>
                 </span>
-                <span class="icon is-small is-right">
-                  <i class="fas fa-exclamation-triangle"></i>
-                </span>
               </div>
             </div>
-
             <div class="field">
               <label class="label">Message</label>
               <div class="control">
                 <textarea class="textarea" placeholder="Textarea"></textarea>
               </div>
             </div>
-
             <div class="field is-grouped">
-              <div class="control">
-                <button class="button is-link">Submit</button>
+              <div class="control ">
+                <button class="button">Submit&nbsp;&nbsp;<i class="fas fa-paper-plane"></i></button>
               </div>
             </div>
           </div>
@@ -266,23 +281,23 @@
     </div>
     <div class="section-light clients">
       <div class="container">
-        <div class="columns is-vcentered is-multiline" data-aos="fade-in" data-aos-easing="linear">
-          <div class="column is-2 ">
+        <div class="columns is-multiline" data-aos="fade-in" data-aos-easing="linear">
+          <div class="column is-2 is-12-mobile">
             <img src="img/client1.png" alt="Client 1">
           </div>
-          <div class="column is-2">
+          <div class="column is-2 is-12-mobile">
             <img src="img/client3.png" alt="Client 1">
           </div>
-          <div class="column is-2">
+          <div class="column is-2 is-12-mobile">
             <img src="img/client4.png" alt="Client 1">
           </div>
-          <div class="column is-2">
+          <div class="column is-2 is-12-mobile">
             <img src="img/client5.png" alt="Client 1">
           </div>
-          <div class="column is-2">
+          <div class="column is-2 is-12-mobile">
             <img src="img/client6.png" alt="Client 1">
           </div>
-          <div class="column is-2">
+          <div class="column is-2 is-12-mobile">
             <img src="img/client7.png" alt="Client 1">
           </div>
         </div>

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600');
-$accent: #39cde7;
+$accent: ##00d1b2;
 $accentDarker: darken($color: $accent,
 $amount: 20);
 * {
@@ -11,7 +11,7 @@ a {
 }
 
 h1 {
-    font-size: 2rem; 
+    font-size: 2rem;
 }
 .hero {
     background-image: url('../img/bg.png');

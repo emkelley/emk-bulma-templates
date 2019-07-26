@@ -6,27 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dashboard - Bulma 0.7.1 Template</title>
-    <script defer src="https://pro.fontawesome.com/releases/v5.0.10/js/all.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|IBM+Plex+Sans:300,400,600" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" crossorigin="anonymous"/>
+    <script src="https://kit.fontawesome.com/2828f7885a.js" integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.2/gh-fork-ribbon.min.css" />
 </head>
 
 <body>
-        <a class="github-fork-ribbon" href="https://github.com/emkelley/EK-Bulma-Templates" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+    <a class="github-fork-ribbon" href="https://github.com/emkelley/EK-Bulma-Templates" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
     <nav class="navbar topNav">
         <div class="container ">
             <div class="navbar-brand">
                 <a class="navbar-item" href="https://bulma.io">
-                    <img src="images/logo.png" alt="My logo" width="118" height="">
+                    <img src="images/logo.png" alt="My logo" width="250" height="">
                 </a>
-                <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+                <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
             </div>
             <div class="navbar-end">
                 <div class="navbar-item">
@@ -44,7 +47,7 @@
     </nav>
     <nav class="navbar shadow">
         <div class="container">
-            <div class="navbar-menu">
+            <div class="navbar-menu" id="navMenu">
                 <div class="navbar-start bottomNav ">
                     <a class="navbar-item is-active" href="#">
                         <i class="far fa-tachometer-alt"></i>&nbsp; Dashboard</a>
@@ -116,7 +119,7 @@
                             <div class="media-right">
                                 <div class="tags has-addons">
                                     <span class="tag is-light">Status:</span>
-                                    <span class="tag is-success">In Transit</span>
+                                    <span class="tag is-transit">In Transit</span>
                                 </div>
                             </div>
                         </article>
@@ -127,20 +130,38 @@
                     <div class="tile is-ancestor has-text-centered">
                         <div class="tile is-parent">
                             <article class="tile is-child box">
-                                <p class="title">8365</p>
+                                <p class="title counter" data-count="5157">0</p>
                                 <p class="subtitle">Total Deliveries</p>
                             </article>
                         </div>
                         <div class="tile is-parent">
                             <article class="tile is-child box">
-                                <p class="title">2172</p>
+                                <p class="title counter" data-count="2102">0</p>
                                 <p class="subtitle">Products</p>
                             </article>
                         </div>
                         <div class="tile is-parent">
                             <article class="tile is-child box">
-                                <p class="title">14</p>
+                                <p class="title counter" data-count="39">0</p>
                                 <p class="subtitle">Open Orders</p>
+                            </article>
+                        </div>
+                        <div class="tile is-parent">
+                            <article class="tile is-child box">
+                                <p class="title counter" data-count="8365">0</p>
+                                <p class="subtitle">Metrics</p>
+                            </article>
+                        </div>
+                        <div class="tile is-parent">
+                            <article class="tile is-child box">
+                                <p class="title counter" data-count="2172">0</p>
+                                <p class="subtitle">Cups of Coffee</p>
+                            </article>
+                        </div>
+                        <div class="tile is-parent">
+                            <article class="tile is-child box">
+                                <p class="title counter" data-count="14">0</p>
+                                <p class="subtitle">Pizzas</p>
                             </article>
                         </div>
                     </div>
@@ -149,9 +170,7 @@
                 </div>
             </div>
         </div>
-        <br>
-        <span class="heading">Recent Orders</span>
-        <br>
+        <span class="heading">Metrics</span>
         <div class="columns">
             <div class="column">
                 <div class="box">
@@ -165,18 +184,9 @@
             </div>
         </div>
     </div>
-    <script async type="text/javascript" src="js/charts.js"></script>
-</body>
-
-</html>
-  
-  
-
-    <script  src="js/index.js"></script>
-
-
-
-
+    <br>
+    <br>
+    <script async type="text/javascript" src="js/scripts.js"></script>
 </body>
 
 </html>
